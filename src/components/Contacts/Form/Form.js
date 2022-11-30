@@ -41,7 +41,7 @@ const Form = ({addContact, contacts}) => {
         
         <input onChange={onChangeInput} name={"phoneNumber"} value={form.phoneNumber} placeholder={"Phone Number"}></input>
         <br></br>
-        <button>Add</button>
+        <button className='abc'>Add</button>
     </form>
     </>
   )

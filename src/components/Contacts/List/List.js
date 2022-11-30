@@ -21,13 +21,18 @@ const List = ({contacts}) => {
      </input>
 
 
-    <ul>
+    <ul className='listing'>
     {contacts.map((contact, index)=>{
         return(
-        <li key={index}>{contact.fullName} {contact.phoneNumber}</li>
+        <li key={index}> 
+        <span>{contact.fullName}</span>
+        <span>{contact.phoneNumber}</span>
+        </li>
         )   
     })}
     </ul>
+
+    <p>Total contacts: {filtered.length}</p>
     </>
   )
 }
